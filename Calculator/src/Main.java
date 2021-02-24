@@ -12,6 +12,10 @@ public class Main {
             str = str.trim();
             if (str.equals("exit"))
                 break;
+            if (str.equals("")) {
+                System.out.println("Введите что-нибудь");
+                continue;
+            }
             char[] ch_arr = str.toCharArray();
             int i = 0;
             if (ch_arr[i] == '-')
